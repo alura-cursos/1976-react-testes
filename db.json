@@ -44,6 +44,24 @@
       "valor": "10",
       "data": "12/10/2020",
       "id": 7
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "12/10/2020",
+      "id": 8
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "12/10/2020",
+      "id": 9
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "12/10/2020",
+      "id": 10
     }
   ]
 }
