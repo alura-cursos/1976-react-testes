@@ -1,6 +1,6 @@
 {
   "conta": {
-    "saldo": 1000
+    "saldo": 900
   },
   "transacoes": [
     {
@@ -62,6 +62,18 @@
       "valor": "10",
       "data": "12/10/2020",
       "id": 10
+    },
+    {
+      "transacao": "saque",
+      "valor": 0,
+      "data": "14/10/2020",
+      "id": 11
+    },
+    {
+      "transacao": "saque",
+      "valor": "100",
+      "data": "14/10/2020",
+      "id": 12
     }
   ]
 }
