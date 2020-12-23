@@ -66,6 +66,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
             </div>
         </form>
     </div>
+    
 };
 
 Conta.defaultProps = {
