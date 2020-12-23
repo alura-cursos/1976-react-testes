@@ -60,7 +60,7 @@ const Conta = ({ saldo, realizarTransacao }) => {
             ></input>
 
             <div>
-                <button>
+                <button type='submit'>
                     Realizar operação
                 </button>
             </div>
