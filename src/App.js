@@ -49,7 +49,7 @@ function App() {
       </header>
 
       <Conta saldo={saldo} realizarTransacao={realizarTransacao}/>
-      <Transacoe transacoes={transacoes} />
+      <Transacoes transacoes={transacoes} />
     </div>
   );
 }
