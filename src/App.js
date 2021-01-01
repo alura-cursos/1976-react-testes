@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <header id="header" data-testid="header" className="App-header">
-        <h1>ByteBank!</h1>
+        <h1>ByteBank</h1>
       </header>
 
       <Conta saldo={saldo} realizarTransacao={realizarTransacao}/>
