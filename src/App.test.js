@@ -22,14 +22,14 @@ describe('Componente principal', () => {
                 font-weight: bold;
           `)
         })
-        it('Verificando a cor do fundo', () => {
-            render(<App/>)
-            const header = screen.getByTestId('header')
-            const bg = header.parentElement;
-            expect(bg).toHaveStyle(`
-                display: block;
-            `)
-        })
+        // it('Verificando a cor do fundo', () => {
+        //     render(<App/>)
+        //     const header = screen.getByTestId('header')
+        //     const bg = header.parentElement;
+        //     expect(bg).toHaveStyle(`
+        //         display: block;
+        //     `)
+        // })
 
     })
 })
