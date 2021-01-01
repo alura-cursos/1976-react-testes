@@ -1,17 +1,34 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen, cleanup } from '@testing-library/react'
+import "@testing-library/jest-dom"
 
 import App from './App'
+
+afterEach(cleanup);
 
 describe('Componente principal', () => {
     describe('App-header', () => {
         it('Mostrar o nome do banco', () => {
             render(<App/>)
-            expect(screen.getByText('ByteBank')).toBeInTheDocument()
+            const NomeBanco = screen.getByText('ByteBank')
+            expect(NomeBanco).toBeInTheDocument()
         })
-        test('Mostrar a cor verde', () => {
-            const { debug } = render(<App/>)
-            // debug()
+        it('Verificando os estilos do texto', () => {
+            render(<App/>)
+            const EstiloNomeBanco = screen.getByText('ByteBank')
+            expect(EstiloNomeBanco).toHaveStyle(`
+                display: block;
+                font-size: 2em;
+                font-weight: bold;
+          `)
+        })
+        it('Verificando a cor do fundo', () => {
+            render(<App/>)
+            const header = screen.getByTestId('header')
+            const bg = header.parentElement;
+            expect(bg).toHaveStyle(`
+                display: block;
+            `)
         })
 
     })
