@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: npm install # install package
+      - run: npm run build # install package
   test:
     docker: 
       - image: cimg/node:14.5.0 # the primary container, where your job's commands are run
