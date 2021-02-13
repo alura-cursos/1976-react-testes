@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header id="header" data-testid="header" className="App-header">
         <h1>ByteBank</h1>
       </header>
 
